@@ -1,0 +1,16 @@
+#[derive(Debug)]
+enum Power{
+    Int(i32),
+    Float(f64),
+    Text(String),
+}
+fn main() {
+    let v = vec![Power::Int(23),
+                 Power::Float(22.0),
+                 Power::Text(String::from("sagar"))];
+    for i in 0..3
+        {
+            println!("{:?}", v[i]);
+        }
+
+}

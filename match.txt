@@ -1,0 +1,19 @@
+#[macro_use]
+extern crate text_io;
+
+fn main(){
+
+  println!("enter the currancy");
+    let currency:String= read!();
+    println!("{}",country(currency));
+}
+fn country(power1:String) -> String
+{
+    match power1.as_ref() {
+        "penny"=> String::from("coin"),
+        "nickel" => String::from("ruppes"),
+        "dime" =>String::from( "note"),
+        "quarter" => String::from("euro"),
+        _ => String::from("none"),
+    }
+}

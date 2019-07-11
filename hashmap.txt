@@ -1,0 +1,21 @@
+use::std::collections::HashMap;
+
+
+
+
+fn main(){
+let mut team=HashMap::new();
+    team.insert(String::from("eagle"),90);
+   team.insert(String::from("nano"),40);
+    team.insert(String::from("eagle"),50);
+
+    for (key,value) in &team{
+        println!("{}   {}",key, value);
+    }
+    println!("{:?}",team);
+let name=vec![String::from("nikhil"),String::from("pankaj")];
+    let score=vec![10,90];
+    let finalpattern: HashMap<_,_> = name.iter().zip(score.iter()).collect();
+    println!("{:?}",finalpattern);
+
+}
